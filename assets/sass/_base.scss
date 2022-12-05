@@ -1,0 +1,230 @@
+/*=================================================*/
+/*                      Base                     */
+/*=================================================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: currentColor;
+  }
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+  // border-radius: 12px;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+:root {
+  --responsive-font: 1.83rem;
+}
+
+/* ---------const------------*/
+
+$bp-xlarge: 112.5em; //1800px
+$bp-largest: 75em; //1200px
+$bp-992: 61.875em; //990
+$bp-small: 52.25em; //900px
+$bp-xsmall: 37.5em; //600px
+$bp-380: 23.75em; //380
+$bp-340: 21.25em; //340
+$bp-290: 18.125em; //290
+/* ----xx-----const-------xx-----*/
+
+html {
+  font-size: 62.5%; //10px
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    // font-size: 48.75%;
+  }
+
+  @media only screen and (max-width: $bp-380) {
+    font-size: 44%;
+  }
+
+  @media only screen and (max-width: $bp-340) {
+    font-size: 42%;
+  }
+
+  @media only screen and (max-width: $bp-290) {
+    font-size: 35%;
+  }
+
+  @media only screen and (min-width: $bp-xlarge) {
+    font-size: 75%;
+  }
+}
+
+
+/*=================================================*/
+/*                 Typography                      */
+/*=================================================*/
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  align-items: center;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-xsmall) {
+    margin-bottom: 3rem;
+  }
+
+  &__primary {
+    color: #1c1c1c;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: -1.4px;
+    margin-bottom: 2rem;
+
+    &--features {
+      color: #fff;
+    }
+
+    &--about-page {
+      @media only screen and (max-width: $bp-small) {
+        margin-bottom: 0rem;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: #585757;
+    font-size: 1.9rem;
+    font-weight: 400;
+    max-width: 75rem;
+
+    &--features {
+      color: #fff;
+    }
+  }
+
+  &--terms {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 2rem 0;
+  }
+
+  &--about-page {
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 0rem;
+    }
+  }
+}
+
+
+.paragraph {
+  font-size: 1.55rem;
+  line-height: 1.7;
+  color: #2e2f31;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  margin-bottom: 2rem;
+  text-align: justify;
+
+  @media only screen and (max-width: $bp-xsmall) {
+    font-size: var(--responsive-font);
+  }
+
+  &--speciality {
+    color: #848484;
+    font-size: 1.55rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: var(--responsive-font);
+    }
+  }
+
+  &--features {
+    color: #fff;
+  }
+
+  &--footer {
+    color: #fff;
+    line-height: 1.954;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--icon {
+    position: relative;
+    padding-left: 3rem;
+
+    i {
+      position: absolute;
+      top: 5.5px;
+      left: 0;
+      color: #016fb7;
+    }
+  }
+}
+
+
+////////////////////////////
+
+.line-btn {
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &__link {
+
+    &:link,
+    &:visited {
+      font-size: 2rem;
+      color: #82b440;
+      border-bottom: 1px solid #82b440;
+      padding: 3px;
+      transition: all 0.2s;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    &:hover {
+      background: #82b440;
+      color: #fff;
+      padding: 3px 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.15);
+      transform: translateY(-3px);
+      border-bottom: 1px solid #82b440;
+    }
+  }
+}
