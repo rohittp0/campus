@@ -3,13 +3,23 @@
 /*=================================================*/
 
 .navigation {
-  // max-width: 96vw;
-  background-color: #fff !important;
-  position: relative;
+  width: 100%;
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // position: relative;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-  z-index: 2;
+  z-index: 3;
+
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  @media only screen and (max-width: $bp-992) {
+    padding: 0rem 1.5rem;
+    position: relative;
+    background: #fff;
+  }
 
   @media only screen and (max-width: $bp-992) {
     padding: 0rem 1.5rem;
@@ -29,6 +39,14 @@
 
     -webkit-animation: headerSlideDown 0.5s ease forwards;
     animation: headerSlideDown 0.5s ease forwards;
+
+    .navigation {
+      &__link {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #000;
+      }
+    }
   }
 
   &__content {
@@ -97,6 +115,8 @@
         font-size: 3rem;
       }
     }
+
+
   }
 
   &__items {
@@ -117,14 +137,14 @@
   &__link {
     font-size: 1.6rem;
     font-weight: 400;
-    color: #727272;
+    color: #fff;
 
     &:hover {
-      color: rgba(94, 0, 255, 1);
+      color: rgba(247, 147, 30, 1);
     }
 
     &.active {
-      color: rgba(94, 0, 255, 1);
+      color: rgba(247, 147, 30, 1);
       font-weight: 500;
     }
 

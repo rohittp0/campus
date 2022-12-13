@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
@@ -36,7 +37,7 @@
     <div class="container navigation__content">
       <div class="overlay hidden"></div>
       <a href="index.html" class="navigation__logo">
-        <img src="./assets/Logo.png" alt="logo">
+        <img src="./assets/Logo-white.png" alt="logo">
       </a>
       <ul class="navigation__list">
         <li class="navigation__items"> <a href=" #home" class="navigation__link active">Home</a></li>
@@ -62,92 +63,85 @@
   </nav>
   <!-- ---------nav-bar---------- -->
 
-  <div class="fsbgs" id="#home">
-    <img src="./assets/TShape.png" class="topshape" alt="" />
-    <div class="first-section">
-      <div class="container">
 
-        <div class="fs-contents">
-          <div class="fstexts">
-            <p class="fsheading">We love stories, let’s make together.</p>
-            <p class="fstagline">
-              We are a community of tinkerers, makers, policy geeks & students
-              and are working towards mapping and empowering people who share a
-              passion to innovate.
-            </p>
-            <!-- <button class="fsbtn">Join Discord</button> -->
-          </div>
 
-        </div>
-
-        <div class="fsboxes">
+  <!-- header -->
+  <section class="banner__slider home" id="home">
+    <div class="owl-carousel owl-theme">
+      <header class="header" style="background-image: url(assets/img/th-header.png) ">
+        <div class="container">
           <div class="row">
+            <div class="col-lg-12 col-md-12 col-12 header__left-part" data-aos="fade-right">
+              <h1 class="header__title"> We love stories, <br>
+                let’s make <span>
+                  together
+                </span> </h1>
+              <h5 class="header__sub-title">
+                We are a community of tinkerers, makers, policy geeks & students
+                and are working towards mapping and empowering people who share a
+                passion to innovate.
+              </h5>
+              <div class="d-flex align-item-center gap-3">
+                <a href="join.html" class="joinus">Apply Now<span></span></a>
+                <a href="join.html" class="joinus">Join Discord<span></span></a>
+              </div>
+            </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div class="fsbox">
-                <p class="fsbheading">10000+</p>
-                <p class="fsbtagline">Community Members</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div class="fsbox">
-                <p class="fsbheading">60+</p>
-                <p class="fsbtagline">Campus Chapters</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
 
-              <div class="fsbox">
-                <p class="fsbheading">50+</p>
-                <p class="fsbtagline">Events Conducted</p>
-              </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+
+
+
+  <div class="facts">
+    <div class="container">
+
+      <div class="fsboxes">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="fsbox">
+              <p class="fsbheading">10000+</p>
+              <p class="fsbtagline">Community Members</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div class="fsbox">
-                <p class="fsbheading">50000+</p>
-                <p class="fsbtagline">Students Impacted</p>
-              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="fsbox">
+              <p class="fsbheading">60+</p>
+              <p class="fsbtagline">Campus Chapters</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+
+            <div class="fsbox">
+              <p class="fsbheading">50+</p>
+              <p class="fsbtagline">Events Conducted</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="fsbox">
+              <p class="fsbheading">50000+</p>
+              <p class="fsbtagline">Students Impacted</p>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-    <img src="./assets/BShape.png" class="bottomshape" alt="" />
+
+
   </div>
 
   <!-- ----About---- -->
-  <section class="about section-padding" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-6 col-12 about__left-part" data-aos="fade-right">
-          <h2 class="heading__primary">What are TinkerHub Campus Communities?</h2>
-          <p class="paragraph paragraph--about">
-            Tinkerhub campus communities is a tinkerhub programme encouraging a tech
-            learning culture on campuses so that students can grow their abilities and further their careers.
-            Campus communities will help college students who don't think they're getting enough exposure to technology
-            or don't have the ideal environment to study it.
-
-          </p>
-
-
-        </div>
-        <div class="col-md-12 col-lg-6 col-12 about__right-part" data-aos="fade-left">
-          <img src="assets/img/teamwork.svg" alt="about-img" class="paralax-image">
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- --x--About--x-- -->
-  <!-- ----About---- -->
-  <section class="about section-padding" style="background: #E4FDE1;">
+  <!-- <section class="about section-padding" style="background: #E4FDE1;">
     <div class="container">
       <div class="row about__row--2">
-        <div class="col-md-12 col-lg-6 col-12 about__right-part" data-aos="fade-right">
+        <div class="col-md-12 col-lg-6 col-12 about__right-part">
           <img src="assets/img/networking-illustration.svg" alt="about-img" class="paralax-image about__img-2">
         </div>
-        <div class="col-md-12 col-lg-6 col-12 about__left-part" data-aos="fade-left">
+        <div class="col-md-12 col-lg-6 col-12 about__left-part">
           <h2 class="heading__primary">Why Tinkerhub Campus Communities?</h2>
           <p class="paragraph paragraph--about">
             The fourth industrial revolution is on its way, and talents will be everything. Tinkerhub is dedicated to
@@ -155,172 +149,146 @@
             learning process. Tinkerhub's programmes are all oriented on peer-to-peer learning, and we're dedicated to
             helping our members learn about new technologies, become industry-ready, and, most importantly, network and
             make new contacts.
-
           </p>
-
         </div>
-
       </div>
-
-
     </div>
-  </section>
+  </section> -->
   <!-- --x--About--x-- -->
 
-  <!-- ----About---- -->
-  <section class="about section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-6 col-12 about__left-part" data-aos="fade-right">
-          <h2 class="heading__primary">What changes we have made</h2>
-          <p class="paragraph paragraph--about">
-            Tinkerhub has been actively working towards its dream of making a different kind of tech community for the
-            students, and we have managed to -
-
-          </p>
-
-          <p class="paragraph">
-            Build a tech ecosystem within the state, which is more focused on upskilling and peer-learning.
-            Start tech communities in colleges that didn’t have much exposure before. It was tremendously useful for the
-            students of these colleges; they were getting newer and better opportunities
-
-          </p>
 
 
-        </div>
-        <div class="col-md-12 col-lg-6 col-12 about__right-part" data-aos="fade-left">
-          <img src="assets/img/team-meeting.svg" alt="about-img" class="paralax-image">
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--  -->
-
-
-  <!-- --our-projects-- -->
-  <section class="projects section-padding " id="events">
+  <!-- Events -->
+  <div class="events section-padding">
     <div class="container">
       <div class="heading">
-        <h2 class="heading__primary ">On Going <span> Events </span></h2>
-        <!-- <p class="heading__subtitle ">Each project is designed with close attention to detail,<br> managed &
-          implemented with great care.</p> -->
+        <h2 class="heading__primary "><span> Events </span></h2>
       </div>
-      <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-right">
-          <div class="projects__outer">
-
-            <div class="projects__single-item">
-              <div class="projects__img-container">
-                <!-- <img src="assets/img/houses/2.jpg" alt=""> -->
-                <div class="projects__img" style="background-image: url(assets/img/event-1.jpg)"></div>
-
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+            <div class="events__single-item">
+              <div class="events__details">
+                <h1 class="events__title">
+                  Event Name
+                </h1>
+                <p class="events__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                </p>
               </div>
-              <div class="projects__info">
-                <h3 class="projects__title">Be Curius Extended</h3>
-                <h4 class="projects__catogary">Workshop</h4>
-                <a href="#popup-1" class="projects__btn"><i class="bi bi-arrow-right"> </i></a>
-              </div>
+
+              <img src="assets/img/events.png" alt="events" class="events__img">
+
             </div>
-
           </div>
+          <div class="swiper-slide ">
+            <div class="events__single-item">
+              <div class="events__details">
+                <h1 class="events__title">
+                  Event Name
+                </h1>
+                <p class="events__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                </p>
+              </div>
+
+              <img src="assets/img/events.png" alt="events" class="events__img">
+
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="events__single-item">
+              <div class="events__details">
+                <h1 class="events__title">
+                  Event Name
+                </h1>
+                <p class="events__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                </p>
+              </div>
+
+              <img src="assets/img/events.png" alt="events" class="events__img">
+
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="events__single-item">
+              <div class="events__details">
+                <h1 class="events__title">
+                  Event Name
+                </h1>
+                <p class="events__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                </p>
+              </div>
+
+              <img src="assets/img/events.png" alt="events" class="events__img">
+
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="events__single-item">
+              <div class="events__details">
+                <h1 class="events__title">
+                  Event Name
+                </h1>
+                <p class="events__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                </p>
+              </div>
+
+              <img src="assets/img/events.png" alt="events" class="events__img">
+
+            </div>
+          </div>
+
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
-          <div class="projects__outer">
-
-            <div class="projects__single-item">
-              <div class="projects__img-container">
-                <!-- <img src="assets/img/houses/3.jpg" alt=""> -->
-                <div class="projects__img" style="background-image: url(assets/img/event-2.jpg)"></div>
-
-              </div>
-              <div class="projects__info">
-                <h3 class="projects__title">Share the Vision</h3>
-                <h4 class="projects__catogary">Talk Session</h4>
-                <a href="#popup-1" class="projects__btn"><i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-left">
-          <div class="projects__outer">
-
-            <div class="projects__single-item">
-              <div class="projects__img-container">
-                <!-- <img src="assets/img/houses/4.jpg" alt=""> -->
-                <div class="projects__img" style="background-image: url(assets/img/event-3.jpg)"></div>
-
-              </div>
-              <div class="projects__info">
-                <h3 class="projects__title">Be Curius</h3>
-                <h4 class="projects__catogary">Workshop</h4>
-                <a href="#popup-1" class="projects__btn"><i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-right">
-          <div class="projects__outer">
-            <div class="projects__single-item">
-              <div class="projects__img-container"> -->
-        <!-- <img src="assets/img/houses/5.jpg" alt=""> -->
-        <!-- <div class="projects__img" style="background-image: url(assets/img/event-4.jpg)"></div>
-
-              </div>
-              <div class="projects__info">
-                <h3 class="projects__title">Y Talks</h3>
-                <h4 class="projects__catogary">Talk Session</h4>
-                <a href="#popup-1" class="projects__btn"><i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
-          <div class="projects__outer">
-            <div class="projects__single-item">
-              <div class="projects__img-container"> -->
-        <!-- <img src="assets/img/houses/5.jpg" alt=""> -->
-        <!-- <div class="projects__img" style="background-image: url(assets/img/event-4.jpg)"></div>
-
-              </div>
-              <div class="projects__info">
-                <h3 class="projects__title">Y Talks</h3>
-                <h4 class="projects__catogary">Talk Session</h4>
-                <a href="#popup-1" class="projects__btn"><i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="fade-left">
-          <div class="projects__outer">
-            <div class="projects__single-item">
-              <div class="projects__img-container"> -->
-        <!-- <img src="assets/img/houses/5.jpg" alt=""> -->
-        <!-- <div class="projects__img" style="background-image: url(assets/img/event-4.jpg)"></div>
-
-              </div>
-              <div class="projects__info">
-                <h3 class="projects__title">Y Talks</h3>
-                <h4 class="projects__catogary">Talk Session</h4>
-                <a href="#popup-1" class="projects__btn"><i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
       </div>
-      <div class="line-btn__box">
-        <a href="#/" class="line-btn__link">View More</a>
-      </div>
+
     </div>
+  </div>
+  <!-- -x-Events-x- -->
 
+  <section class="gallery section-padding">
+    <div class="container">
+      <!-- <div class="heading">
+        <h2 class="heading__primary "><span> Events </span></h2>
+      </div> -->
+      <div class="gallery__content">
+        <div class="gallery__box">
+          <div class="gallery__swiper-box">
+            <div class="swiper-container gallery_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                  <img src="assets/img/gallery.png" alt="events" class="gallery__img">
+                </div>
+                <div class="swiper-slide ">
+                  <img src="assets/img/gallery.png" alt="events" class="gallery__img">
+                </div>
+                <div class="swiper-slide ">
+                  <img src="assets/img/gallery.png" alt="events" class="gallery__img">
+                </div>
+                <div class="swiper-slide ">
+                  <img src="assets/img/gallery.png" alt="events" class="gallery__img">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+
+            <h2 class="heading__primary gallery__heading"><span>GALLERY </span></h2>
+
+          </div>
+        </div>
+
+      </div>
   </section>
+
+
+
   <!-- -x-our-projects-x- -->
-  <section class="gallery section-padding" id="gallery">
+  <!-- <section class="gallery section-padding" id="gallery">
     <div class="container">
 
       <div class="heading">
@@ -375,7 +343,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- -----section----- -->
 
@@ -384,256 +352,321 @@
     <h1>Colleges Joined with TinkerHub</h1>
 
     <hr />
+    <div class="college__names-content">
 
-    <div class="container">
+      <div class="container">
 
-      <div class="row">
+        <div class="row">
 
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul>
-            <li class="topLevel" tabIndex="1"><mark>College of Engineering Kidangoor</mark></li>
-            <li class="topLevel"><mark>Rajadhani Institute of Engineering and Technology, Attingal
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>RIT, Kottayam</mark>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+              <li class="topLevel" tabIndex="1"><mark>College of Engineering Kidangoor</mark></li>
+              <li class="topLevel"><mark>Rajadhani Institute of Engineering and Technology, Attingal
+                </mark>
 
 
-            </li>
-            <li class="topLevel"><mark>Kristu Jyoti College of Engineering Trivandrum</mark>
+              </li>
+              <li class="topLevel"><mark>RIT, Kottayam</mark>
 
 
-            </li>
-            <li class="topLevel"><mark>College of engineering karunagappally</mark>
+              </li>
+              <li class="topLevel"><mark>Kristu Jyoti College of Engineering Trivandrum</mark>
 
 
-            </li>
-            <li class="topLevel" tabIndex="6"><mark>Marian Engineering College</mark></li>
-            <li class="topLevel" tabIndex="7"><mark>College of Engineering Aranmula</mark>
-
-            </li>
-            <li class="topLevel"><mark>St. Joseph's College of Engineering and Technology, Palai</mark>
+              </li>
+              <li class="topLevel"><mark>College of engineering karunagappally</mark>
 
 
-            </li>
-          </ul>
+              </li>
+              <li class="topLevel" tabIndex="6"><mark>Marian Engineering College</mark></li>
+              <li class="topLevel" tabIndex="7"><mark>College of Engineering Aranmula</mark>
+
+              </li>
+              <li class="topLevel"><mark>St. Joseph's College of Engineering and Technology, Palai</mark>
+
+
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+              <li class="topLevel" tabIndex="1"><mark>AJ College of Science and Technology</mark></li>
+              <li class="topLevel"><mark>Saintgits College of Engineering, Pathamuttom</mark>
+
+              </li>
+              <li class="topLevel"><mark>TKM College of Engineering, Kollam</mark>
+
+
+              </li>
+              <li class="topLevel"><mark>John Cox Memorial CSI Institute of technology, Kannammoola</mark>
+
+
+              </li>
+              <li class="topLevel"><mark>Mes College, Marampally</mark>
+
+
+              </li>
+              <li class="topLevel" tabIndex="6"><mark>Kmea Engineering College, Edathala</mark></li>
+              <li class="topLevel" tabIndex="7"><mark>Model Engineering College, Thrikkakara</mark>
+
+              </li>
+              <li class="topLevel"><mark>Cochin University College Of Engineering Kuttanad(CUCEK), Pulincunno</mark>
+
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+              <li class="topLevel" tabIndex="1"><mark>Government Engineering College Sreekrishnapuram Palakkad</mark>
+              </li>
+              <li class="topLevel"><mark>NSS COLLEGE OF ENGINEERING, PALAKKAD
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>COLLEGE OF ENGINEERING CHENGANNUR, CHENGANNUR</mark>
+
+
+              </li>
+              <li class="topLevel"><mark>School of engineering CUSAT, Kalamassery
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>Government Engineering College, Thrissur</mark>
+
+
+              </li>
+              <li class="topLevel" tabIndex="6"><mark>AISAT, Kalamassery</mark></li>
+              <li class="topLevel" tabIndex="7"><mark>Government Engineering College Idukki, Idukki</mark>
+
+              </li>
+              <li class="topLevel"><mark>Sree Buddha College of Engineering,Pattoor,Alappuzha</mark>
+
+
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+              <li class="topLevel" tabIndex="1"><mark>Jyothi Engineering College, Vettikkattiri</mark></li>
+              <li class="topLevel"><mark>Providence College of Engineering & School of Business, Chengannur
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>De Paul Institute of Science and Technology, Angamaly</mark>
+
+
+              </li>
+              <li class="topLevel"><mark>AL-AMEEN ENGINEERING COLLEGE,SHORNUR
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>Carmel College of Engineering and Technology, Alappuzha</mark>
+
+
+              </li>
+              <li class="topLevel" tabIndex="6"><mark>MBCCET KUTTIKANAM
+                </mark></li>
+              <li class="topLevel" tabIndex="7"><mark>College of Engineering and Management Punnapra College, Alappuzha
+                </mark>
+
+              </li>
+              <li class="topLevel"><mark>Mar Athanasius College of Engineering, Kothamangalam</mark>
+
+
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+              <li class="topLevel" tabIndex="1"><mark>ILAHIA COLLEGE OF ENGINEERING AND TECHNOLOGY , MUVATTUPUZHA</mark>
+              </li>
+              <li class="topLevel"><mark>College of Engineering Munnar
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>Muthoot Institute of Technology and Science,
+                  Varikoli </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>Sri C Achutha Menon Government College, Thrissur
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>Al-Ameen College edathala,aluva</mark>
+
+
+              </li>
+              <li class="topLevel" tabIndex="6"><mark>Department of Computer Science CUSAT, Kochi
+                </mark></li>
+              <li class="topLevel" tabIndex="7"><mark>AL AZHAR COLLEGE OF ENGINEERING & TECHNOLOGY
+                </mark>
+
+              </li>
+              <li class="topLevel"><mark>KMCT College of Engineering, Kallanthode</mark>
+
+
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+              <li class="topLevel" tabIndex="1"><mark>MES COLLEGE OF ENGINEERING, KUTTIPPURAM</mark>
+              </li>
+              <li class="topLevel"><mark>MES KEVEEYEM COLLEGE, Valanchery
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>INSTITUTE OF ENGINEERING AND TECHNOLOGY CALICUT UNIVERSITY, Safi Institute
+                  KOHINOOR
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>AWH Engineering College
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>MAMO College, Manassery</mark>
+
+
+              </li>
+              <li class="topLevel" tabIndex="6"><mark>M.Dasan Institute of Technology, kozhikode
+                </mark></li>
+              <li class="topLevel" tabIndex="7"><mark>MES PONNANI COLLEGE, PONNANI
+                </mark>
+
+              </li>
+              <li class="topLevel"><mark>Sullamussalam Science College, Areekode</mark>
+
+
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+              <li class="topLevel" tabIndex="1"><mark>Government College of Engineering Kannur, Dharmasala</mark>
+              </li>
+              <li class="topLevel"><mark>College of Engineering, Vadakara
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>Government Engineering College,Wayanad,Thalapuzha
+                </mark>
+
+
+              </li>
+              <li class="topLevel"><mark>College of engineering, thalassery
+                </mark>
+
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul>
+
+              <li class="topLevel"><mark>Govt, Engineering College, Kozhikode</mark>
+
+
+              </li>
+              <li class="topLevel" tabIndex="6"><mark>LBS College of Engineering, Kasaragod
+                </mark></li>
+              <li class="topLevel" tabIndex="7"><mark>Majlis arts and science college, puramannur, valanchery
+                </mark>
+
+              </li>
+              <li class="topLevel"><mark>WMO Arts & Science College, Muttil
+                </mark>
+              <li class="topLevel"><mark>ERANAD KNOWLEDGE CITY TECHNICAL CAMPUS
+                </mark>
+
+
+              </li>
+            </ul>
+          </div>
+
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul>
-            <li class="topLevel" tabIndex="1"><mark>AJ College of Science and Technology</mark></li>
-            <li class="topLevel"><mark>Saintgits College of Engineering, Pathamuttom</mark>
-
-            </li>
-            <li class="topLevel"><mark>TKM College of Engineering, Kollam</mark>
-
-
-            </li>
-            <li class="topLevel"><mark>John Cox Memorial CSI Institute of technology, Kannammoola</mark>
-
-
-            </li>
-            <li class="topLevel"><mark>Mes College, Marampally</mark>
-
-
-            </li>
-            <li class="topLevel" tabIndex="6"><mark>Kmea Engineering College, Edathala</mark></li>
-            <li class="topLevel" tabIndex="7"><mark>Model Engineering College, Thrikkakara</mark>
-
-            </li>
-            <li class="topLevel"><mark>Cochin University College Of Engineering Kuttanad(CUCEK), Pulincunno</mark>
-
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul>
-            <li class="topLevel" tabIndex="1"><mark>Government Engineering College Sreekrishnapuram Palakkad</mark></li>
-            <li class="topLevel"><mark>NSS COLLEGE OF ENGINEERING, PALAKKAD
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>COLLEGE OF ENGINEERING CHENGANNUR, CHENGANNUR</mark>
-
-
-            </li>
-            <li class="topLevel"><mark>School of engineering CUSAT, Kalamassery
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>Government Engineering College, Thrissur</mark>
-
-
-            </li>
-            <li class="topLevel" tabIndex="6"><mark>AISAT, Kalamassery</mark></li>
-            <li class="topLevel" tabIndex="7"><mark>Government Engineering College Idukki, Idukki</mark>
-
-            </li>
-            <li class="topLevel"><mark>Sree Buddha College of Engineering,Pattoor,Alappuzha</mark>
-
-
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul>
-            <li class="topLevel" tabIndex="1"><mark>Jyothi Engineering College, Vettikkattiri</mark></li>
-            <li class="topLevel"><mark>Providence College of Engineering & School of Business, Chengannur
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>De Paul Institute of Science and Technology, Angamaly</mark>
-
-
-            </li>
-            <li class="topLevel"><mark>AL-AMEEN ENGINEERING COLLEGE,SHORNUR
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>Carmel College of Engineering and Technology, Alappuzha</mark>
-
-
-            </li>
-            <li class="topLevel" tabIndex="6"><mark>MBCCET KUTTIKANAM
-              </mark></li>
-            <li class="topLevel" tabIndex="7"><mark>College of Engineering and Management Punnapra College, Alappuzha
-              </mark>
-
-            </li>
-            <li class="topLevel"><mark>Mar Athanasius College of Engineering, Kothamangalam</mark>
-
-
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul>
-            <li class="topLevel" tabIndex="1"><mark>ILAHIA COLLEGE OF ENGINEERING AND TECHNOLOGY , MUVATTUPUZHA</mark>
-            </li>
-            <li class="topLevel"><mark>College of Engineering Munnar
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>Muthoot Institute of Technology and Science,
-                Varikoli </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>Sri C Achutha Menon Government College, Thrissur
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>Al-Ameen College edathala,aluva</mark>
-
-
-            </li>
-            <li class="topLevel" tabIndex="6"><mark>Department of Computer Science CUSAT, Kochi
-              </mark></li>
-            <li class="topLevel" tabIndex="7"><mark>AL AZHAR COLLEGE OF ENGINEERING & TECHNOLOGY
-              </mark>
-
-            </li>
-            <li class="topLevel"><mark>KMCT College of Engineering, Kallanthode</mark>
-
-
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul>
-            <li class="topLevel" tabIndex="1"><mark>MES COLLEGE OF ENGINEERING, KUTTIPPURAM</mark>
-            </li>
-            <li class="topLevel"><mark>MES KEVEEYEM COLLEGE, Valanchery
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>INSTITUTE OF ENGINEERING AND TECHNOLOGY CALICUT UNIVERSITY, Safi Institute
-                KOHINOOR
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>AWH Engineering College
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>MAMO College, Manassery</mark>
-
-
-            </li>
-            <li class="topLevel" tabIndex="6"><mark>M.Dasan Institute of Technology, kozhikode
-              </mark></li>
-            <li class="topLevel" tabIndex="7"><mark>MES PONNANI COLLEGE, PONNANI
-              </mark>
-
-            </li>
-            <li class="topLevel"><mark>Sullamussalam Science College, Areekode</mark>
-
-
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul>
-            <li class="topLevel" tabIndex="1"><mark>Government College of Engineering Kannur, Dharmasala</mark>
-            </li>
-            <li class="topLevel"><mark>College of Engineering, Vadakara
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>Government Engineering College,Wayanad,Thalapuzha
-              </mark>
-
-
-            </li>
-            <li class="topLevel"><mark>College of engineering, thalassery
-              </mark>
-
-            </li>
-
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul>
-
-            <li class="topLevel"><mark>Govt, Engineering College, Kozhikode</mark>
-
-
-            </li>
-            <li class="topLevel" tabIndex="6"><mark>LBS College of Engineering, Kasaragod
-              </mark></li>
-            <li class="topLevel" tabIndex="7"><mark>Majlis arts and science college, puramannur, valanchery
-              </mark>
-
-            </li>
-            <li class="topLevel"><mark>WMO Arts & Science College, Muttil
-              </mark>
-            <li class="topLevel"><mark>ERANAD KNOWLEDGE CITY TECHNICAL CAMPUS
-              </mark>
-
-
-            </li>
-          </ul>
-        </div>
-
       </div>
     </div>
 
-
-
-
-
   </section>
   <!-- --x---section---x-- -->
+
+
+
+  <!-- -------students-Testimonial------ -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="heading">
+        <h2 class="heading__primary "><span> Testimonial </span></h2>
+      </div>
+      <div class="swiper-container testimonial__swiper ">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide ">
+            <figure class="review">
+              <p class="review__text">
+                I chose to come here because it puts me in the workforce sooner. In order to get a first
+                class education, Camford Institute of Management was the most appropriate place to
+                start! </p>
+              <figcaption class="review__user">
+                <img src="assets/img/user/user1.jpg" alt="User 1" class="review__photo">
+                <div class="review__user-box">
+                  <p class="review__user-name">Nihad Usman</p>
+                  <p class="review__user-description">Merchandiser - Wonder Land, Qatar</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide ">
+            <figure class="review">
+              <p class="review__text">
+                The promise made by Camford Institute of Management has been fulfilled. I feel proud and
+                privileged to be placed in Oman. The academic structure bundled with one of the best
+                placement team has made this institute a wonder place to be in
+              </p>
+              <figcaption class="review__user">
+                <img src="assets/img/user/user4.jpg" alt="User 1" class="review__photo">
+                <div class="review__user-box">
+                  <p class="review__user-name">Prajeesh</p>
+                  <p class="review__user-description"> Bright Era, Muscat - Oman</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide ">
+            <figure class="review">
+              <p class="review__text">
+                Camford has helped me fulfil my dreams. The experience here has been a life changing
+                one, and one which I will cherish throughout my life. The interaction with the faculties
+                and the peers helped me shape my personality and made me a better person.
+              </p>
+              <figcaption class="review__user">
+                <img src="assets/img/user/user3.jpg" alt="User 1" class="review__photo">
+                <div class="review__user-box">
+                  <p class="review__user-name">Fasil Tirur </p>
+                  <p class="review__user-description">Merchandiser - Wonder Land, Qatar</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+
+      </div>
+    </div>
+  </section>
+  <!-- --xx-----students-Testimonial---xx--- -->
 
   <!-- faq -->
   <section class="faq" id="faq" data-aos="fade-up">
@@ -643,12 +676,15 @@
 
       <div class="heading">
         <h2 class="heading__primary ">Frequently Asked <span> Questions </span></h2>
-    
+
       </div>
 
       <div class="accordion">
         <div class="accordion-item">
-          <a class="accordion__link">How to start a TinkerHub Campus Community on your campus?</a>
+          <a class="accordion__link">How to start a TinkerHub Campus Community on your campus?
+            <i class="bi bi-chevron-down faq-1"></i>
+            <i class="bi bi-chevron-up faq-2"></i>
+          </a>
           <div class="content">
             <p class="paragraph"> You shouldn’t be alone on this mission! Find a team of
               like-minded pals who
@@ -703,7 +739,10 @@
           </div>
         </div>
         <div class="accordion-item">
-          <a class="accordion__link">How to join the Tinkerhub Campus Community in your college?</a>
+          <a class="accordion__link">How to join the Tinkerhub Campus Community in your college?
+            <i class="bi bi-chevron-down faq-1"></i>
+            <i class="bi bi-chevron-up faq-2"></i>
+          </a>
           <div class="content">
             <p>The Tinkerhub Campus Community at your college can be the place that you can look, if you want to learn
               about the latest technical skills.
@@ -722,7 +761,10 @@
           </div>
         </div> -->
         <div class="accordion-item">
-          <a class="accordion__link">What are the activities of Tinkerhub Campus Community?</a>
+          <a class="accordion__link">What are the activities of Tinkerhub Campus Community?
+            <i class="bi bi-chevron-down faq-1"></i>
+            <i class="bi bi-chevron-up faq-2"></i>
+          </a>
           <div class="content">
             <p>Anything that helps the students to achieve new skills. We will provide a tentative yearly plan to every
               club so that they can focus on the right things — however, this plan can be (should be) challenged by the
@@ -738,6 +780,8 @@
         </div>
         <div class="accordion-item">
           <a class="accordion__link">What has Tinkerhub achieved over the years?
+            <i class="bi bi-chevron-down faq-1"></i>
+            <i class="bi bi-chevron-up faq-2"></i>
           </a>
           <div class="content">
             <p>Tinkerhub has been actively working towards its dream of making a different kind of tech community for
@@ -827,6 +871,7 @@
   <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>

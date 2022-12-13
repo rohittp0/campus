@@ -117,3 +117,86 @@ $('a[href^="#"]').on('click', function (e) {
     });
 });
 
+
+
+////////////////////////////////
+// header
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        990: {
+            slidesPerView: 4,
+            spaceBetween: 60,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 60,
+        }
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    loop: false,
+});
+
+var swiper1 = new Swiper(".gallery_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    loop: false,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+/////////////////////////////////////
+// Testimonial
+
+var swiper1 = new Swiper(".testimonial__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        990: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1400: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    grabCursor:true,
+});
