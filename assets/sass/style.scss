@@ -938,6 +938,14 @@ nav {
         margin: 0;
         margin-bottom: 0;
 
+        a {
+            color: #c3c3c3;
+
+            &:hover {
+                color: rgb(247, 147, 30);
+            }
+        }
+
         @media only screen and (max-width: $bp-xsmall) {
             font-size: 1.6rem;
             // max-width: 27rem;
