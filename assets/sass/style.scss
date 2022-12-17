@@ -43,12 +43,10 @@ nav {
     // height: 100vh;
     @media only screen and (max-width: $bp-992) {
         height: auto;
-        background: #eeedeb;
     }
 
     @media only screen and (max-width: $bp-xsmall) {
-        background-position: 0%;
-        background: #eeedeb;
+        background-position: bottom;
     }
 
     // &::before {
@@ -140,7 +138,7 @@ nav {
         }
 
         @media only screen and (max-width: $bp-xsmall) {
-            font-size: 3.6rem;
+            font-size: 4.6rem;
         }
     }
 
@@ -157,6 +155,10 @@ nav {
         width: 100%;
         max-width: 90rem;
         text-shadow: 0 1px 2px rgb(0 0 0 / 25%), 0 2px 4px rgb(0 0 0 / 13%);
+
+        @media only screen and (max-width: $bp-xsmall) {
+            line-height: 1.4;
+        }
     }
 
     &::before {
@@ -1087,6 +1089,13 @@ nav {
         .swiper-button-prev {
             color: #fff !important;
         }
+
+
+        @media only screen and (max-width: $bp-xsmall) {
+            max-width: 100%;
+            padding: 2rem;
+
+        }
     }
 
     &__heading {
@@ -1094,6 +1103,32 @@ nav {
         left: 0;
         top: 50%;
         transform: rotate(-90deg) translate(20%, -60%);
+
+
+
+        &--1 {
+            display: none;
+        }
+
+        &--2 {
+            display: block;
+        }
+
+        @media only screen and (max-width: $bp-xsmall) {
+            transform: rotate(0deg) translate(0%, 0%);
+            position: relative;
+
+            &--1 {
+                display: block;
+                text-align: center;
+            }
+
+            &--2 {
+                display: none;
+            }
+
+        }
+
     }
 }
 
@@ -1164,9 +1199,9 @@ nav {
     width: 100%;
     // height: 33rem;
 
-    @media only screen and (max-width: $bp-small) {
-        height: 37rem;
-    }
+    // @media only screen and (max-width: $bp-small) {
+    //     height: 37rem;
+    // }
 
     @media only screen and (max-width: $bp-xsmall) {
         height: auto;
@@ -1238,25 +1273,35 @@ nav {
 ///////////////////////////
 /// college names content
 
-.college__names-content {
-    max-height: 60rem;
-    overflow-y: scroll;
+.college__names {
+    &-content {
+        max-height: 60rem;
+        overflow-y: scroll;
 
-    &::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        background-color: #F5F5F5;
-        width: 0.5rem !important;
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+            width: 0.5rem !important;
+        }
+
+        &::-webkit-scrollbar {
+            background-color: #F5F5F5;
+            width: 1rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: #AAAAAA;
+            width: 0.5rem;
+
+        }
     }
 
-    &::-webkit-scrollbar {
-        background-color: #F5F5F5;
-        width: 1rem;
-    }
+    &--img {
 
-    &::-webkit-scrollbar-thumb {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-        background-color: #AAAAAA;
-        width: 0.5rem;
+        @media only screen and (max-width: $bp-xsmall) {
+            margin-top: 3rem;
 
+        }
     }
 }

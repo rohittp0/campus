@@ -50,6 +50,7 @@
       &__logo {
         &--1 {
           display: none;
+
         }
 
         &--2 {
@@ -93,10 +94,20 @@
 
     &--1 {
       display: block;
+
+      @media only screen and (max-width: $bp-992) {
+        display: none;
+      }
+
     }
 
     &--2 {
       display: none;
+
+      @media only screen and (max-width: $bp-992) {
+        display: block;
+
+      }
     }
   }
 
@@ -156,6 +167,11 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: #fff;
+
+    @media only screen and (max-width: $bp-992) {
+      color: #000;
+
+    }
 
     &:hover {
       color: rgba(247, 147, 30, 1);
